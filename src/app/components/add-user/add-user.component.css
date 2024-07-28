@@ -1,4 +1,4 @@
 .cancel-button:hover {
-  background-color: red;
-  color: white;
+  background-color: rgb(0, 153, 255);
+  color: #ffffff;
 }

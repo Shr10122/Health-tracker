@@ -26,8 +26,8 @@ Health Challenge Tracker is a single-page application (SPA) developed using Angu
 
 ## Screenshots
 
-![](https://github.com/user-attachments/assets/add/shr1.png)
-![](https://github.com/user-attachments/assets/add/shr2.png)
+Healthapp\src\app\assets\shr1.png
+Healthapp\src\app\assets\shr3.png
 
 ## Getting Started
 
@@ -43,7 +43,7 @@ Follow these steps to run the application locally.
 1. **Clone the Repository:**
     ```sh
     git clone https://github.com/Shr10122/Health-tracker.git
-    cd Health-Challenge-Tracker
+    cd Health-Tracker
     ```
 
 2. **Install Dependencies:**
