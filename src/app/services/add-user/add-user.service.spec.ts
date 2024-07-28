@@ -57,7 +57,7 @@ describe('AddUserService', () => {
     const existingUsers = JSON.stringify([
       {
         id: 1,
-        name: 'John Doe',
+        name: 'Shreyas',
         workouts: [{ type: 'Running', minutes: 30 }],
         totalWorkouts: 1,
         totalMinutes: 30,
@@ -66,7 +66,7 @@ describe('AddUserService', () => {
     spyOn(localStorage, 'getItem').and.returnValue(existingUsers);
     spyOn(localStorage, 'setItem');
 
-    service.addUser('John Doe', 'Running', 20);
+    service.addUser('Shreyas', 'Running', 20);
 
     expect(localStorage.setItem).toHaveBeenCalledWith(
       'workoutData',
@@ -98,7 +98,7 @@ describe('AddUserService', () => {
     spyOn(localStorage, 'getItem').and.returnValue('[]');
     spyOn(localStorage, 'setItem');
 
-    const result = service.addUser('John Doe', null, 30);
+    const result = service.addUser('Shreyas', null, 30);
 
     expect(result).toBeFalse();
     expect(mockSnackBar.open).toHaveBeenCalledWith(
@@ -113,7 +113,7 @@ describe('AddUserService', () => {
     spyOn(localStorage, 'getItem').and.returnValue('[]');
     spyOn(localStorage, 'setItem');
 
-    const result = service.addUser('John Doe', 'Running', null);
+    const result = service.addUser('Shreyas', 'Running', null);
 
     expect(result).toBeFalse();
     expect(mockSnackBar.open).toHaveBeenCalledWith(
@@ -145,7 +145,7 @@ describe('AddUserService', () => {
     const existingUsers = JSON.stringify([
       {
         id: 1,
-        name: 'John Doe',
+        name: 'Shreyas',
         workouts: [],
         totalWorkouts: 0,
         totalMinutes: 0,
@@ -154,7 +154,7 @@ describe('AddUserService', () => {
     spyOn(localStorage, 'getItem').and.returnValue(existingUsers);
     spyOn(localStorage, 'setItem');
 
-    service.addUser('Jane Doe', 'Cycling', 60);
+    service.addUser('Shreyas', 'Cycling', 60);
 
     expect(localStorage.setItem).toHaveBeenCalledWith(
       'workoutData',
@@ -171,7 +171,7 @@ describe('AddUserService', () => {
     const existingUsers = JSON.stringify([
       {
         id: 1,
-        name: 'Jane Doe',
+        name: 'Shreyas',
         workouts: [{ type: 'Swimming', minutes: 45 }],
         totalWorkouts: 1,
         totalMinutes: 45,
@@ -180,7 +180,7 @@ describe('AddUserService', () => {
     spyOn(localStorage, 'getItem').and.returnValue(existingUsers);
     spyOn(localStorage, 'setItem');
 
-    service.addUser('John Doe', 'Running', 30);
+    service.addUser('Shreyas', 'Running', 30);
 
     expect(localStorage.setItem).toHaveBeenCalledWith(
       'workoutData',
@@ -197,7 +197,7 @@ describe('AddUserService', () => {
     const existingUsers = JSON.stringify([
       {
         id: 1,
-        name: 'John Doe',
+        name: 'Shreyas',
         workouts: [
           { type: 'Running', minutes: 30 },
           { type: 'Swimming', minutes: 45 },
@@ -209,7 +209,7 @@ describe('AddUserService', () => {
     spyOn(localStorage, 'getItem').and.returnValue(existingUsers);
     spyOn(localStorage, 'setItem');
 
-    service.addUser('John Doe', 'Cycling', 60);
+    service.addUser('Shreyas', 'Cycling', 60);
 
     expect(localStorage.setItem).toHaveBeenCalledWith(
       'workoutData',
@@ -226,7 +226,7 @@ describe('AddUserService', () => {
     spyOn(localStorage, 'getItem').and.returnValue(null);
     spyOn(localStorage, 'setItem');
 
-    service.addUser('John Doe', 'Running', 30);
+    service.addUser('Shreyas', 'Running', 30);
 
     expect(localStorage.setItem).toHaveBeenCalledWith(
       'workoutData',
@@ -246,10 +246,10 @@ describe('AddUserService', () => {
     let result = service.addUser(null, 'Running', 30);
     expect(result).toBeFalse();
 
-    result = service.addUser('John Doe', null, 30);
+    result = service.addUser('Shreyas', null, 30);
     expect(result).toBeFalse();
 
-    result = service.addUser('John Doe', 'Running', null);
+    result = service.addUser('Shreyas', 'Running', null);
     expect(result).toBeFalse();
 
     expect(mockSnackBar.open).toHaveBeenCalledWith(

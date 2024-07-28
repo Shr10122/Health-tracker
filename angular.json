@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Health-Challenge-Tracker": {
+    "Health-Tracker": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/Health-Challenge-Tracker",
+            "outputPath": "dist/Health-Tracker",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -58,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Health-Challenge-Tracker:build:production"
+              "buildTarget": "Health-Tracker:build:production"
             },
             "development": {
-              "buildTarget": "Health-Challenge-Tracker:build:development"
+              "buildTarget": "Health-Tracker:build:development"
             }
           },
           "defaultConfiguration": "development"
