@@ -26,8 +26,8 @@ Health Challenge Tracker is a single-page application (SPA) developed using Angu
 
 ## Screenshots
 
-Healthapp\src\app\assets\shr1.png
-Healthapp\src\app\assets\shr3.png
+ ![Screeshot](image.png\src\app\assets\shr1.png)
+ ![Screenshot](image-1.png\src\app\assets\shr3.png)
 
 ## Getting Started
 
@@ -58,6 +58,10 @@ Follow these steps to run the application locally.
     ng serve
     ```
     Navigate to `http://localhost:4500/`. The application will automatically reload if you change any of the source files.
+## Live Demo
+
+Check out the live version of the app here: [Live Demo](https://workout-tracker-50d47.web.app)
+Project Console: https://console.firebase.google.com/project/workout-tracker-50d47/overview
 
 ### Code Scaffolding
 
